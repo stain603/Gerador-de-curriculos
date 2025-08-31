@@ -1,0 +1,86 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f4f4f9;
+  margin: 0;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 10px;
+  border-radius: 20px;
+}
+
+header h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.logo {
+  height: 150px;
+  width: auto;
+
+}
+
+.conteudo {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.formulario {
+  width: 100%;
+  max-width: 500px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.formulario h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+input, textarea, button {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: 0.3s ease;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+header h1:hover, .logo:hover, input:hover, 
+textarea:hover, 
+button:hover, h2:hover {
+  transform: translateY(-5px) scale(1.05); 
+  transition: 0.4s ease;
+}
+
+@media (max-width: 768px) {
+  .conteudo { flex-direction: column; }
+  .formulário { width: 100%; } 
+  .curriculo { position: relative; max-height: none; }
+}

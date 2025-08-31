@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criador de Currículos</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="imagens/logo.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+  <header>
+    <img src="imagens/icone prata correto.png" alt="logo" class="logo">
+    <h1>Criador de Currículos</h1>
+  </header>
+
+  <main class="conteudo">
+    <div class="formulario">
+      <h2>Preencha seus dados</h2>
+
+      <input type="text" id="nome" placeholder="Nome e sobrenome" required>
+      <input type="text" id="cargo" placeholder="Sua função">
+      <input type="email" id="email" placeholder="Coloque seu melhor email">
+      <input type="text" id="telefone" placeholder="Telefone ou WhatsApp">
+      <input type="text" id="local" placeholder="Cidade e estado">
+
+      <textarea id="objetivo" placeholder="Seu objetivo"></textarea>
+      <textarea id="formacao" placeholder="Formação acadêmica"></textarea>
+      <textarea id="cursos" placeholder="Cursos e certificações"></textarea>
+      <textarea id="experiencia" placeholder="Suas experiências"></textarea>
+      <textarea id="habilidades" placeholder="Suas habilidades (separe por vírgula)"></textarea>
+
+      <button onclick="gerarCurriculo()">Gerar Currículo</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
